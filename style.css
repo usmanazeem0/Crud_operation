@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Form styling */
+.form {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.gender-options {
+  margin-top: 10px;
+}
+
+.gender-options label {
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Error messages */
+span {
+  display: block;
+  font-size: 14px;
+  color: red;
+  margin-top: 3px;
+}
+
+/* Table container */
+.data {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+/* Table styling */
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#userTable th,
+#userTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#userTable th {
+  background-color: #f2f2f2;
+}
+
+.tbl-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  min-width: 70px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+/* specific colors */
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #da190b;
+}
+
+.tbl-btn:hover {
+  background-color: #a32b2b;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  form label {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #userTable th,
+  #userTable td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .tbl-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
